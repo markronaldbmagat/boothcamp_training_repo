@@ -1,0 +1,32 @@
+<mvc:View xmlns:layout="sap.ui.layout" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="sapui5traex1.controller.View1" xmlns:sap.ui.layout.form="sap.ui.layout.form" xmlns:sap.ui.core="sap.ui.core">
+    <Page id="page" title="{i18n>title}">
+    <content>
+        <sap.ui.layout.form:SimpleForm xmlns:layout="sap.ui.layout" xmlns:sap.ui.commons="sap.ui.commons" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:sap.ui.layout.form="sap.ui.layout.form" xmlns:sap.ui.core="sap.ui.core" editable="true" layout="ResponsiveGridLayout" id="form0">
+            <sap.ui.layout.form:content>
+                <sap.ui.core:Title text="Simple Survey Form" id="title0"/>
+                <Label xmlns:mvc="sap.ui.core.mvc"  xmlns:sap.ui.core="sap.ui.core" xmlns="sap.m" text="Name" id="lbl_Name"/>
+                <Input xmlns:mvc="sap.ui.core.mvc" xmlns:sap.ui.layout.form="sap.ui.layout.form" xmlns:sap.ui.core="sap.ui.core" xmlns="sap.m" width="100%" id="in_Name"/>
+                <Label xmlns="sap.m" text="Street/No" id="lbl_StreetNo"/>
+                <Input xmlns="sap.m" width="100%" id="In_Street"/>
+                <Input xmlns="sap.m" width="100%" id="In_Num"/>
+                <Label xmlns:mvc="sap.ui.core.mvc" xmlns:sap.ui.layout.form="sap.ui.layout.form" xmlns:sap.ui.core="sap.ui.core" xmlns="sap.m" text="Zipcode/City" id="lbl_ZipcodeCity"/>
+                <Input xmlns:mvc="sap.ui.core.mvc" xmlns:sap.ui.layout.form="sap.ui.layout.form" xmlns:sap.ui.core="sap.ui.core" xmlns="sap.m" width="100%" id="In_ZipCode"/>
+                <Input xmlns:mvc="sap.ui.core.mvc" xmlns:sap.ui.layout.form="sap.ui.layout.form" xmlns:sap.ui.core="sap.ui.core" xmlns="sap.m" width="100%" id="In_City"/>
+                <Label xmlns:mvc="sap.ui.core.mvc" xmlns:sap.ui.layout.form="sap.ui.layout.form" xmlns:sap.ui.core="sap.ui.core" xmlns="sap.m" text="Country" id="lbl_Country"/>
+                <ComboBox xmlns="sap.m" id="combo_Country">
+                    <items>
+                        <core:Item xmlns:core="sap.ui.core" key="Key_England" text="England" id="elem1_England"/>
+                        <core:Item xmlns:core="sap.ui.core" key="keyGermany" text="Germany" id="elem2_Germany"/>
+                        <sap.ui.core:Item text="USA" id="Elem3_USA" key="key_USA"/>
+                        <sap.ui.core:Item text="Philippines" id="Elem4" key="key_Philippines"/>
+                        </items>
+                    
+                </ComboBox>
+                </sap.ui.layout.form:content>
+            
+        </sap.ui.layout.form:SimpleForm>
+        <Button xmlns:layout="sap.ui.layout" xmlns:mvc="sap.ui.core.mvc" xmlns:sap.ui.commons="sap.ui.commons" xmlns="sap.m" text="Save" id="btn_Save" activeIcon="sap-icon://save" icon="sap-icon://save" tooltip="Save Entries"/>
+        <Button xmlns:layout="sap.ui.layout" xmlns:mvc="sap.ui.core.mvc" xmlns:sap.ui.commons="sap.ui.commons" xmlns="sap.m" text="Clear" id="btn_Clear" activeIcon="sap-icon://delete" icon="sap-icon://delete" tooltip="Clear Form" press="onClearForm"/>
+    </content>
+    </Page>
+</mvc:View>
