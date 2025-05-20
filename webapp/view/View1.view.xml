@@ -1,11 +1,4 @@
-<mvc:View xmlns:layout="sap.ui.layout" 
-    xmlns:mvc="sap.ui.core.mvc" 
-    xmlns="sap.m" 
-    controllerName="sapui5traex1.controller.View1" 
-    xmlns:sap.ui.layout.form="sap.ui.layout.form" 
-    xmlns:sap.ui.core="sap.ui.core"
-    xmlns:sap.ui.commons="sap.ui.commons"
-    >
+<mvc:View xmlns:layout="sap.ui.layout" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:sap.ui.layout.form="sap.ui.layout.form" xmlns:sap.ui.core="sap.ui.core" xmlns:sap.ui.commons="sap.ui.commons" controllerName="sapui5traex1.controller.View1">
     <Page id="page" title="{i18n>title}">
     <content>
         <sap.ui.layout.form:SimpleForm editable="true" layout="ResponsiveGridLayout" id="form0">
@@ -22,10 +15,10 @@
                 <Label text="Country" id="lbl_Country"/>
                 <ComboBox xmlns="sap.m" id="combo_Country">
                     <items>
-                        <core:Item xmlns:core="sap.ui.core" key="Key_England" text="England" id="elem1_England"/>
-                        <core:Item xmlns:core="sap.ui.core" key="keyGermany" text="Germany" id="elem2_Germany"/>
-                        <sap.ui.core:Item text="USA" id="Elem3_USA" key="key_USA"/>
-                        <sap.ui.core:Item text="Philippines" id="Elem4" key="key_Philippines"/>
+                        <core:Item xmlns:core="sap.ui.core" key="UK" text="England" id="elem1_England"/>
+                        <core:Item xmlns:core="sap.ui.core" key="DE" text="Germany" id="elem2_Germany"/>
+                        <sap.ui.core:Item text="USA" id="Elem3_USA" key="US"/>
+                        <sap.ui.core:Item text="Philippines" id="Elem4" key="PH"/>
                         </items>
                     
                 </ComboBox>
